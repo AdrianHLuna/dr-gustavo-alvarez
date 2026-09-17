@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+/*
+ * Dr. Gustavo Álvarez Velasco — Cirugía Urológica / Urología Oncológica
+ * (Tuxtla Gutiérrez, Chiapas).
+ * Dirección de diseño: "Índice Editorial" — deliberadamente distinta a los
+ * otros 3 sitios ya registrados (bento oscuro de dr-raul-vega, split
+ * asimétrico carbon/dorado de dr-raul-mu-oz-gomez, corte diagonal navy de
+ * dr-aram-alarcon): fondo claro dominante, tipografía editorial de revista,
+ * tarjetas como filas de índice (sin recuadros), animación lenta con fades
+ * largos y subrayados que se dibujan en vez de springs/zoom/clip-path.
+ * Paleta oficial real de marca (PALETA DE COLORES GUSTAVO A_compressed.pdf).
+ */
+:root {
+  --color-ink: #0a192f; /* midnight ink sofisticado, profundo y con autoridad médica */
+  --color-navy: #00396c; /* secundario oficial, azul profundo institucional */
+  --color-blue: #0072d8; /* primario oficial — acento vivo de marca */
+  --color-blue-dark: #0058a8;
+  --color-blue-light: #99c7ef;
+  --color-blue-pale: #eef6fc; /* fondo azul hielo luminoso y fresco */
+  --color-slate: #566d82; /* texto secundario refinado con legibilidad superior */
+  --color-line: #e3ebf3; /* líneas divisorias sutiles y elegantes, no alambre oscuro */
+  --color-gray: #7a8fa2;
+  --color-paper: #f7fafc; /* fondo alterno claro, moderno y premium */
+
+  --background: #ffffff;
+  --foreground: var(--color-ink);
+
+  /* Animación suave y editorial */
+  --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-editorial: 0.5s;
+
+  /* Sistema de sombras multinivel con profundidad atmosférica */
+  --shadow-xs: 0 1px 2px 0 rgba(0, 57, 108, 0.05);
+  --shadow-soft: 0 10px 30px -10px rgba(0, 57, 108, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.03);
+  --shadow-soft-lg: 0 20px 45px -12px rgba(0, 57, 108, 0.12), 0 8px 24px -4px rgba(0, 0, 0, 0.04);
+  --shadow-glow: 0 0 35px -5px rgba(0, 114, 216, 0.25);
+}
+
+@theme inline {
+  --color-primary: var(--color-ink);
+  --color-primary-foreground: #ffffff;
+  --color-accent: var(--color-blue);
+  --color-accent-foreground: #ffffff;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--color-paper);
+  --color-muted-foreground: var(--color-slate);
+  --color-border: var(--color-line);
+  --font-sans: var(--font-pt-sans);
+  --font-heading: var(--font-fraunces);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-pt-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-heading {
+  font-family: var(--font-fraunces), Georgia, serif;
+  letter-spacing: -0.015em;
+}
+
+/* Folio editorial: numeración refinada tipo revista médica */
+.editorial-folio {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-style: italic;
+  font-variant-numeric: oldstyle-nums;
+  letter-spacing: 0.02em;
+}
+
+/* Fila de índice: base de transición suave */
+.index-row {
+  border-bottom: 1px solid var(--color-line);
+  transition: all 0.35s var(--ease-editorial);
+}
+
+/* Subrayado interactivo de alta precisión */
+.underline-draw {
+  background-image: linear-gradient(var(--color-blue), var(--color-blue));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1.5px;
+  transition: background-size 0.4s var(--ease-editorial), color 0.3s ease;
+}
+.underline-draw:hover {
+  background-size: 100% 1.5px;
+}
+
+/* Marco refinado para fotografía médica */
+.mat-frame {
+  background: #ffffff;
+  padding: 0.75rem;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(227, 235, 243, 0.8);
+  box-shadow: var(--shadow-soft-lg);
+}
+
+/* Fallback de imagen con gradiente médico sofisticado y brillo sutil */
+.image-fallback {
+  background: radial-gradient(circle at 30% 20%, #eef6fc 0%, #d8eaf8 50%, #b8dbf5 100%);
+  position: relative;
+  overflow: hidden;
+}
+.image-fallback::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-blue), var(--color-navy));
+}
+
+/* Efecto de brillo de vidrio sutil */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
