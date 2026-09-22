@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { doctor } from "@/data";
 import { fraunces, ptSans } from "@/lib/fonts";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import CookieConsentBanner from "@/components/CookieConsentBanner";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StickyBottomNav from "@/components/StickyBottomNav";
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Footer />
         <FloatingButtons />
         <StickyBottomNav />
+        <CookieConsentBanner />
       </body>
     </html>
   );
