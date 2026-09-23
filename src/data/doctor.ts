@@ -45,7 +45,7 @@ export const doctor: DoctorProfile = {
   aboutPhoto: "/images/aboutme.jpeg",
   bio: "El Dr. Gustavo Álvarez Velasco es cirujano urólogo con Alta Especialidad en Urología Oncológica, formada en el Instituto Nacional de Cancerología. Con más de 15 años de experiencia, ha atendido a más de 5,000 pacientes y realizado más de 3,500 procedimientos y cirugías urológicas en su consultorio de Tuxtla Gutiérrez, Chiapas. Su práctica está enfocada en el diagnóstico preciso y el tratamiento integral de los padecimientos del sistema urinario y reproductivo masculino, desde la consulta general hasta la cirugía oncológica.",
   philosophy:
-    "La atención urológica debe explicarse con claridad y sin prisa, para que cada paciente entienda su diagnóstico y las opciones de tratamiento disponibles antes de decidir.",
+    "Mi compromiso es ofrecer una atención urológica cercana, profesional y basada en evidencia, para que cada paciente se sienta escuchado, comprenda su diagnóstico y tenga la confianza de elegir el tratamiento más adecuado.",
   experience: [
     {
       year: "2011",
