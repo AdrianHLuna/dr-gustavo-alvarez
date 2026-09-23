@@ -114,7 +114,7 @@ export default function HomePage() {
       {/* Sobre el especialista */}
       <section className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 py-20 md:grid-cols-12">
         <div className="relative aspect-[4/5] md:col-span-4">
-          <DoctorPortrait src={doctor.photo} alt={`${doctor.title} ${doctor.name}`} frame />
+          <DoctorPortrait src={doctor.aboutPhoto ?? doctor.photo} alt={`${doctor.title} ${doctor.name}`} frame />
         </div>
         <div className="flex flex-col justify-center md:col-span-8">
           <span className="editorial-folio text-xs font-semibold tracking-wider text-[var(--color-blue)] uppercase">
