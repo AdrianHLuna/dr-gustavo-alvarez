@@ -261,55 +261,55 @@ Negative Prompt: cartoon, text, watermark, signature, CGI, nudity.
 
 ### 2. Nicturia (`public/sintomas/nicturia.jpg`)
 ```text
-Photorealistic shot of a person sitting on the edge of their bed at night looking tired, soft bedside lamp light, quiet bedroom environment.
+Photorealistic shot of a person sitting up on the edge of their bed at night, visibly groggy, glancing at a nightstand clock showing a late hour, one hand reaching for slippers as if about to get up to use the bathroom, soft bedside lamp light, quiet bedroom environment.
 
 Lighting: Soft night ambient lamp lighting.
 Color Palette: Brand Deep Navy (#00396C) bed linens, Brand Vivid Blue (#0072D8) accents, Cream.
-Composition: Medium shot centered on the seated figure.
+Composition: Medium shot centered on the seated figure and the nightstand clock.
 Suffixes: realistic clinical photography, high-fidelity textures, 8k --ar 16:9 --v 6.0
 Negative Prompt: cartoon, text, watermark, signature, CGI, nudity.
 ```
 
 ### 3. Dificultad para Lograr una Erección (`public/sintomas/dificultad-para-lograr-una-ereccion.jpg`)
 ```text
-Photorealistic shot of a mature couple sitting together on a sofa in a quiet, warm living room, subtle thoughtful expressions, tasteful and discreet composition.
+Photorealistic shot of a mature man sitting alone on the edge of the bed at night, elbows on knees, head slightly lowered in a pensive and frustrated expression, out-of-focus partner sleeping peacefully in the background, dim bedroom lighting conveying emotional weight and isolation — must NOT look happy, affectionate or content.
 
-Lighting: Warm soft indoor lighting.
-Color Palette: Brand Deep Navy (#00396C), Brand Vivid Blue (#0072D8) cushion accents, Warm Beige.
-Composition: Medium shot, discreet and tasteful framing.
+Lighting: Low warm bedside lamp light, soft shadows, night atmosphere.
+Color Palette: Brand Deep Navy (#00396C), Brand Vivid Blue (#0072D8) subtle accents, Warm Charcoal.
+Composition: Medium shot from the side, seated figure framed against the dim room.
 Suffixes: realistic clinical photography, high-fidelity textures, 8k --ar 16:9 --v 6.0
-Negative Prompt: cartoon, text, watermark, signature, CGI, nudity, explicit content.
+Negative Prompt: cartoon, text, watermark, signature, CGI, nudity, explicit content, smiling, happy couple, affectionate, romantic.
 ```
 
 ### 4. Enrojecimiento del Prepucio o del Pene (`public/sintomas/enrojecimiento-del-prepucio.jpg`)
 ```text
-Close-up photorealistic photo of a doctor's gloved hands during a discreet clinical consultation, holding a clipboard with an anatomical reference chart, clinical exam room setting.
+Photorealistic shot of a person sitting on the edge of the bed getting dressed in the morning, pausing mid-motion while adjusting their waistband with a subtle wince of discomfort, implying they just felt irritation, tasteful and discreet framing from the waist up only.
 
-Lighting: Bright sterile consultation room light.
-Color Palette: Brand Deep Navy (#00396C), Brand Vivid Blue (#0072D8), Clinical White.
-Composition: Focused hands-and-clipboard consultation view.
+Lighting: Soft warm morning daylight.
+Color Palette: Brand Deep Navy (#00396C), Brand Vivid Blue (#0072D8) accents, Warm Beige.
+Composition: Medium shot from the waist up, seated figure, no explicit body area visible.
 Suffixes: realistic clinical photography, high-fidelity textures, 8k --ar 16:9 --v 6.0
-Negative Prompt: cartoon, text, watermark, signature, CGI, nudity, graphic content.
+Negative Prompt: cartoon, text, watermark, signature, CGI, nudity, graphic content, exposed skin below waist.
 ```
 
 ### 5. Erupciones en la Punta del Pene (`public/sintomas/erupciones-en-la-punta-del-pene.jpg`)
 ```text
-Close-up photorealistic photo of a urologist explaining a diagnosis to a seated patient in a bright, modern consultation office, empathetic professional interaction.
+Photorealistic shot of a person standing in the bathroom wrapped in a towel after a shower, pausing to look down with a puzzled, concerned expression as if just noticing something unusual on their skin, tasteful framing from the chest up only.
 
-Lighting: Bright clean consultation room lighting.
-Color Palette: Brand Deep Navy (#00396C), Brand Vivid Blue (#0072D8), Clinical White.
-Composition: Medium shot of doctor-patient consultation.
+Lighting: Bright clean bathroom lighting, soft steam in the air.
+Color Palette: Brand Deep Navy (#00396C), Brand Vivid Blue (#0072D8) towel accent, Clinical White.
+Composition: Medium shot from the chest up, no explicit body area visible.
 Suffixes: realistic clinical photography, high-fidelity textures, 8k --ar 16:9 --v 6.0
-Negative Prompt: cartoon, text, watermark, signature, CGI, nudity, graphic content.
+Negative Prompt: cartoon, text, watermark, signature, CGI, nudity, graphic content, exposed skin below waist.
 ```
 
 ### 6. Secreción con Olor Fétido (`public/sintomas/secrecion-con-olor-fetido.jpg`)
 ```text
-Close-up photorealistic photo of a urologist reviewing laboratory results on a tablet during a private consultation, discreet and professional clinical setting.
+Photorealistic shot of a person holding a piece of clothing over a laundry hamper, pausing with a slight grimace and wrinkled nose as if noticing an unusual, unpleasant odor, discreet and tasteful home setting.
 
-Lighting: Bright sterile consultation room light.
-Color Palette: Brand Deep Navy (#00396C), Brand Vivid Blue (#0072D8), Clinical White.
-Composition: Focused tablet-and-hands consultation view.
+Lighting: Soft natural indoor daylight.
+Color Palette: Brand Deep Navy (#00396C), Brand Vivid Blue (#0072D8) hamper accent, Clinical White.
+Composition: Medium shot, focused on facial expression and the clothing in hand.
 Suffixes: realistic clinical photography, high-fidelity textures, 8k --ar 16:9 --v 6.0
 Negative Prompt: cartoon, text, watermark, signature, CGI, nudity, graphic content.
 ```
@@ -338,13 +338,13 @@ Negative Prompt: cartoon, text, watermark, signature, CGI, nudity, blood.
 
 ### 9. Sangre en la Orina (`public/sintomas/sangre-en-la-orina.jpg`)
 ```text
-Photorealistic photo of a concerned adult standing in a bright bathroom looking thoughtfully at a glass of water, subtle worried expression, no explicit depiction of bodily fluids.
+Photorealistic photo of a concerned adult standing at the bathroom sink, pausing while washing their hands and looking up with a worried, startled expression at their own reflection in the mirror, toilet visible out of focus in the background implying they just noticed something alarming — no explicit depiction of bodily fluids, toilet bowl contents, or blood.
 
 Lighting: Bright clean bathroom lighting.
 Color Palette: Brand Deep Navy (#00396C), Brand Vivid Blue (#0072D8), Clinical White.
-Composition: Medium shot, contemplative posture.
+Composition: Medium shot at the sink, focused on the worried reflection in the mirror.
 Suffixes: realistic clinical photography, high-fidelity textures, 8k --ar 16:9 --v 6.0
-Negative Prompt: red blood, cartoon, text, watermark, signature, CGI, nudity, graphic content.
+Negative Prompt: red blood, cartoon, text, watermark, signature, CGI, nudity, graphic content, toilet bowl contents.
 ```
 
 ### 10. Infecciones Urinarias Recurrentes (`public/sintomas/infecciones-urinarias-recurrentes.jpg`)
