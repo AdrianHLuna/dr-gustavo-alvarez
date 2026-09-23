@@ -8,7 +8,6 @@ import StructuredData from "@/components/StructuredData";
 import DoctorPortrait from "@/components/DoctorPortrait";
 import IndexRow from "@/components/IndexRow";
 import EntityCard from "@/components/EntityCard";
-import MapFacade from "@/components/MapFacade";
 
 const paymentIcons: Record<string, typeof Banknote> = {
   Efectivo: Banknote,
@@ -167,28 +166,6 @@ export default function HomePage() {
               )}
             </ul>
           </div>
-        </div>
-      </section>
-
-      {/* Ubicación del Consultorio con Pin interactivo de primera vista */}
-      <section id="ubicacion" className="border-t border-[var(--color-line)] bg-slate-50/50 py-16">
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="mb-8">
-            <span className="editorial-folio text-xs font-semibold tracking-wider text-[var(--color-blue)] uppercase">
-              Ubicación de Atención Médica
-            </span>
-            <h2 className="font-heading text-2xl sm:text-3xl text-[var(--color-ink)] mt-1 font-bold">
-              Ubicación del Consultorio
-            </h2>
-            <p className="mt-2 text-sm text-[var(--color-slate)] max-w-xl font-sans">
-              {doctor.address}, {doctor.city}, {doctor.state}.
-            </p>
-          </div>
-          <MapFacade
-            address={`${doctor.address}, ${doctor.city}, ${doctor.state}`}
-            googleMapsUrl={doctor.googleMapsUrl}
-            whatsapp={doctor.whatsapp}
-          />
         </div>
       </section>
 
