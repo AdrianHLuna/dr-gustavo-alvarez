@@ -94,7 +94,7 @@ export const services: MedicalService[] = [
       },
     ],
     lastReviewed: "2026-09-14",
-    image: "/servicios/protesis-de-pene.jpg",
+    image: "/servicios/protesis_pene.jpg",
     seo: {
       title: "Prótesis de Pene en Tuxtla Gutiérrez | Dr. Álvarez",
       description:
@@ -144,7 +144,7 @@ export const services: MedicalService[] = [
     ],
     relatedConditions: ["d-cancer-testicular"],
     lastReviewed: "2026-09-14",
-    image: "/servicios/protesis-testicular.jpg",
+    image: "/servicios/protesis_testicular.jpg",
     seo: {
       title: "Prótesis Testicular en Tuxtla Gutiérrez | Dr. Álvarez",
       description:
@@ -194,7 +194,7 @@ export const services: MedicalService[] = [
     ],
     relatedConditions: ["d-incontinencia-urinaria", "d-vejiga-neurogenica"],
     lastReviewed: "2026-09-14",
-    image: "/servicios/esfinter-urinario-artificial.jpg",
+    image: "/servicios/esfinter_urinario.jpg",
     seo: {
       title: "Esfínter Urinario Artificial | Dr. Gustavo Álvarez",
       description:
@@ -244,7 +244,7 @@ export const services: MedicalService[] = [
     ],
     relatedConditions: ["d-incontinencia-urinaria"],
     lastReviewed: "2026-09-14",
-    image: "/servicios/mallas-anti-incontinencia.jpg",
+    image: "/servicios/mallas.jpg",
     seo: {
       title: "Mallas Anti-Incontinencia | Dr. Gustavo Álvarez",
       description:
@@ -343,7 +343,7 @@ export const services: MedicalService[] = [
     ],
     relatedConditions: ["d-vejiga-neurogenica", "d-estenosis-uretra"],
     lastReviewed: "2026-09-14",
-    image: "/servicios/reconstruccion-urinaria.jpg",
+    image: "/servicios/reconstruccion_urinaria.jpg",
     seo: {
       title: "Reconstrucción Urinaria en Tuxtla Gutiérrez | Dr. Álvarez",
       description:
@@ -393,7 +393,7 @@ export const services: MedicalService[] = [
     ],
     relatedConditions: ["d-cancer-prostata"],
     lastReviewed: "2026-09-14",
-    image: "/servicios/prostatectomia-radical.jpg",
+    image: "/servicios/prostatectomia.jpg",
     seo: {
       title: "Prostatectomía Radical en Tuxtla Gutiérrez | Dr. Álvarez",
       description:
@@ -493,7 +493,7 @@ export const services: MedicalService[] = [
     ],
     relatedConditions: ["d-cancer-vejiga"],
     lastReviewed: "2026-09-14",
-    image: "/servicios/cistectomia-radical.jpg",
+    image: "/servicios/cistectomia_radical.jpg",
     seo: {
       title: "Cistectomía Radical en Tuxtla Gutiérrez | Dr. Álvarez",
       description:

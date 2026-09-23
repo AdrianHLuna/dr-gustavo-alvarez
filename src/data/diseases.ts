@@ -65,7 +65,7 @@ export const diseases: MedicalCondition[] = [
     relatedServices: ["s-urodinamia"],
     relatedSymptoms: ["sy-miccion-frecuente", "sy-nicturia"],
     lastReviewed: "2026-09-14",
-    image: "/enfermedades/vejiga-hiperactiva.jpg",
+    image: "/enfermedades/vegiga.jpg",
     seo: {
       title: "Vejiga Hiperactiva en Tuxtla Gutiérrez | Dr. Álvarez",
       description:
@@ -122,7 +122,7 @@ export const diseases: MedicalCondition[] = [
       },
     ],
     lastReviewed: "2026-09-14",
-    image: "/enfermedades/pene-escondido.jpg",
+    image: "/enfermedades/pene_escondido.jpg",
     seo: {
       title: "Pene Escondido: Causas y Tratamiento | Dr. Álvarez",
       description:
@@ -187,7 +187,7 @@ export const diseases: MedicalCondition[] = [
     ],
     relatedServices: ["s-esfinter-urinario-artificial", "s-mallas-anti-incontinencia"],
     lastReviewed: "2026-09-14",
-    image: "/enfermedades/incontinencia-urinaria.jpg",
+    image: "/enfermedades/incontinencia_urinaria.jpg",
     seo: {
       title: "Incontinencia Urinaria en Tuxtla Gutiérrez | Dr. Álvarez",
       description:
@@ -252,7 +252,7 @@ export const diseases: MedicalCondition[] = [
     relatedServices: ["s-esfinter-urinario-artificial", "s-reconstruccion-urinaria"],
     relatedSymptoms: ["sy-retencion-urinaria"],
     lastReviewed: "2026-09-14",
-    image: "/enfermedades/vejiga-neurogenica.jpg",
+    image: "/enfermedades/vegiga_neurogenica.jpg",
     seo: {
       title: "Vejiga Neurogénica: Diagnóstico | Dr. Gustavo Álvarez",
       description:
@@ -313,7 +313,7 @@ export const diseases: MedicalCondition[] = [
     ],
     relatedSymptoms: ["sy-enrojecimiento-prepucio", "sy-erupciones-pene", "sy-secrecion-fetida", "sy-disuria"],
     lastReviewed: "2026-09-14",
-    image: "/enfermedades/ets-its.jpg",
+    image: "/enfermedades/its.jpg",
     seo: {
       title: "Infecciones de Transmisión Sexual | Dr. Álvarez",
       description:
@@ -377,7 +377,7 @@ export const diseases: MedicalCondition[] = [
     relatedServices: ["s-reconstruccion-urinaria"],
     relatedSymptoms: ["sy-disuria", "sy-retencion-urinaria"],
     lastReviewed: "2026-09-14",
-    image: "/enfermedades/estenosis-de-uretra.jpg",
+    image: "/enfermedades/estenosis_uretra.jpg",
     seo: {
       title: "Estenosis de Uretra en Tuxtla Gutiérrez | Dr. Álvarez",
       description:
@@ -440,7 +440,7 @@ export const diseases: MedicalCondition[] = [
     relatedServices: ["s-prostatectomia-radical", "s-radioterapia"],
     relatedSymptoms: ["sy-hematuria", "sy-retencion-urinaria"],
     lastReviewed: "2026-09-14",
-    image: "/enfermedades/cancer-de-prostata.jpg",
+    image: "/enfermedades/cancer_prostata.jpg",
     seo: {
       title: "Cáncer de Próstata: Diagnóstico | Dr. Gustavo Álvarez",
       description:
@@ -503,7 +503,7 @@ export const diseases: MedicalCondition[] = [
     relatedServices: ["s-cistectomia-radical", "s-radioterapia"],
     relatedSymptoms: ["sy-hematuria"],
     lastReviewed: "2026-09-14",
-    image: "/enfermedades/cancer-de-vejiga.jpg",
+    image: "/enfermedades/cancer_vegiga.jpg",
     seo: {
       title: "Cáncer de Vejiga: Diagnóstico | Dr. Gustavo Álvarez",
       description:
@@ -568,7 +568,7 @@ export const diseases: MedicalCondition[] = [
     relatedServices: ["s-nefrectomia"],
     relatedSymptoms: ["sy-hematuria"],
     lastReviewed: "2026-09-14",
-    image: "/enfermedades/cancer-de-rinon.jpg",
+    image: "/enfermedades/cancer_riñon.jpg",
     seo: {
       title: "Cáncer de Riñón: Diagnóstico | Dr. Gustavo Álvarez",
       description:
@@ -629,7 +629,7 @@ export const diseases: MedicalCondition[] = [
     ],
     relatedServices: ["s-protesis-testicular"],
     lastReviewed: "2026-09-14",
-    image: "/enfermedades/cancer-testicular.jpg",
+    image: "/enfermedades/cancer_testicular.jpg",
     seo: {
       title: "Cáncer Testicular: Diagnóstico | Dr. Gustavo Álvarez",
       description:

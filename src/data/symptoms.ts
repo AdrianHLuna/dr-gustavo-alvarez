@@ -37,7 +37,7 @@ export const symptoms: Symptom[] = [
     ],
     relatedConditions: ["d-vejiga-hiperactiva"],
     lastReviewed: "2026-09-14",
-    image: "/sintomas/miccion-frecuente.jpg",
+    image: "/sintomas/miccion.jpg",
     seo: {
       title: "Micción Frecuente: Causas | Dr. Gustavo Álvarez",
       description:
@@ -120,7 +120,7 @@ export const symptoms: Symptom[] = [
     ],
     relatedConditions: [],
     lastReviewed: "2026-09-14",
-    image: "/sintomas/dificultad-para-lograr-una-ereccion.jpg",
+    image: "/sintomas/dificultad_eeccion.jpg",
     seo: {
       title: "Dificultad para Lograr una Erección | Dr. Álvarez",
       description:
@@ -161,7 +161,7 @@ export const symptoms: Symptom[] = [
     ],
     relatedConditions: ["d-ets-its"],
     lastReviewed: "2026-09-14",
-    image: "/sintomas/enrojecimiento-del-prepucio.jpg",
+    image: "/sintomas/enrojecimiento_prepusio.jpg",
     seo: {
       title: "Enrojecimiento del Prepucio o el Pene | Dr. Álvarez",
       description:
@@ -201,7 +201,7 @@ export const symptoms: Symptom[] = [
     ],
     relatedConditions: ["d-ets-its"],
     lastReviewed: "2026-09-14",
-    image: "/sintomas/erupciones-en-la-punta-del-pene.jpg",
+    image: "/sintomas/erupcion_pene.jpg",
     seo: {
       title: "Erupciones en la Punta del Pene | Dr. Gustavo Álvarez",
       description:
@@ -240,7 +240,7 @@ export const symptoms: Symptom[] = [
     ],
     relatedConditions: ["d-ets-its"],
     lastReviewed: "2026-09-14",
-    image: "/sintomas/secrecion-con-olor-fetido.jpg",
+    image: "/sintomas/secrecion_olor.jpg",
     seo: {
       title: "Secreción con Olor Fétido en el Pene | Dr. Álvarez",
       description:
@@ -281,7 +281,7 @@ export const symptoms: Symptom[] = [
     ],
     relatedConditions: ["d-ets-its", "d-estenosis-uretra"],
     lastReviewed: "2026-09-14",
-    image: "/sintomas/dolor-o-ardor-al-orinar.jpg",
+    image: "/sintomas/dolor_orinar.jpg",
     seo: {
       title: "Dolor o Ardor al Orinar | Dr. Gustavo Álvarez",
       description:
@@ -321,7 +321,7 @@ export const symptoms: Symptom[] = [
     ],
     relatedConditions: ["d-vejiga-neurogenica", "d-estenosis-uretra", "d-cancer-prostata"],
     lastReviewed: "2026-09-14",
-    image: "/sintomas/necesidad-de-orinar-sin-poder-hacerlo.jpg",
+    image: "/sintomas/orinar_imposibilidad.jpg",
     seo: {
       title: "No Poder Orinar: Retención Urinaria | Dr. Álvarez",
       description:
@@ -363,7 +363,7 @@ export const symptoms: Symptom[] = [
     ],
     relatedConditions: ["d-cancer-prostata", "d-cancer-vejiga", "d-cancer-rinon"],
     lastReviewed: "2026-09-14",
-    image: "/sintomas/sangre-en-la-orina.jpg",
+    image: "/sintomas/sangre_orina.jpg",
     seo: {
       title: "Sangre en la Orina (Hematuria) | Dr. Gustavo Álvarez",
       description:
@@ -404,7 +404,7 @@ export const symptoms: Symptom[] = [
     ],
     relatedConditions: [],
     lastReviewed: "2026-09-14",
-    image: "/sintomas/infecciones-urinarias-recurrentes.jpg",
+    image: "/sintomas/infecciones_recurrentes.jpg",
     seo: {
       title: "Infecciones Urinarias Recurrentes | Dr. Álvarez",
       description:

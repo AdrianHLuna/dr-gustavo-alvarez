@@ -7,6 +7,8 @@ import { generateHomeSchemas } from "@/lib/schemas";
 import StructuredData from "@/components/StructuredData";
 import DoctorPortrait from "@/components/DoctorPortrait";
 import IndexRow from "@/components/IndexRow";
+import EntityCard from "@/components/EntityCard";
+import MapFacade from "@/components/MapFacade";
 
 const paymentIcons: Record<string, typeof Banknote> = {
   Efectivo: Banknote,
@@ -168,50 +170,84 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Enfermedades — lista-índice editorial */}
+      {/* Ubicación del Consultorio con Pin interactivo de primera vista */}
+      <section id="ubicacion" className="border-t border-[var(--color-line)] bg-slate-50/50 py-16">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="mb-8">
+            <span className="editorial-folio text-xs font-semibold tracking-wider text-[var(--color-blue)] uppercase">
+              Ubicación de Atención Médica
+            </span>
+            <h2 className="font-heading text-2xl sm:text-3xl text-[var(--color-ink)] mt-1 font-bold">
+              Ubicación del Consultorio
+            </h2>
+            <p className="mt-2 text-sm text-[var(--color-slate)] max-w-xl font-sans">
+              {doctor.address}, {doctor.city}, {doctor.state}.
+            </p>
+          </div>
+          <MapFacade
+            address={`${doctor.address}, ${doctor.city}, ${doctor.state}`}
+            googleMapsUrl={doctor.googleMapsUrl}
+            whatsapp={doctor.whatsapp}
+          />
+        </div>
+      </section>
+
+      {/* Enfermedades — cuadrícula destacada de las 4 más importantes */}
       <section id="enfermedades" className="border-t border-[var(--color-line)] py-16">
         <div className="mx-auto max-w-6xl px-6">
-          <div className="flex items-end justify-between border-b border-[var(--color-line)] pb-4 mb-4">
+          <div className="flex items-end justify-between border-b border-[var(--color-line)] pb-4 mb-8">
             <div>
               <span className="editorial-folio text-xs font-semibold tracking-wider text-[var(--color-blue)] uppercase">
-                Catálogo Clínico
+                Catálogo Clínico Principal
               </span>
-              <h2 className="font-heading text-2xl sm:text-3xl text-[var(--color-ink)] mt-1">
-                Enfermedades que atiende
+              <h2 className="font-heading text-2xl sm:text-3xl text-[var(--color-ink)] mt-1 font-bold">
+                Enfermedades más frecuentes
               </h2>
             </div>
             <Link
               href="/enfermedades"
               className="group inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-blue)] transition-colors hover:text-[var(--color-navy)]"
             >
-              <span>Ver todas</span>
+              <span>Ver las 10 enfermedades</span>
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </Link>
           </div>
-          <div>
-            {diseases.map((disease, i) => (
-              <IndexRow
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {diseases.slice(0, 4).map((disease, i) => (
+              <EntityCard
                 key={disease.id}
                 index={i + 1}
                 title={disease.name}
                 description={disease.description}
                 href={`/enfermedades/${disease.slug}` as Route}
                 image={disease.image}
+                badge="Alta Especialidad"
               />
             ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <Link
+              href="/enfermedades"
+              className="inline-flex items-center justify-center gap-2 rounded-xl border border-blue-200/80 bg-blue-50/50 px-6 py-3 text-sm font-semibold text-[var(--color-navy)] transition-all hover:bg-[var(--color-blue)] hover:text-white hover:border-transparent hover:shadow-md"
+            >
+              <span>Ver todas las enfermedades urológicas ({diseases.length})</span>
+              <ArrowUpRight className="h-4 w-4" />
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Servicios — misma lista-índice */}
+      {/* Servicios — cuadrícula destacada de los 4 más importantes */}
       <section id="servicios" className="border-t border-[var(--color-line)] py-16 bg-[var(--color-paper)]">
         <div className="mx-auto max-w-6xl px-6">
-          <div className="flex items-end justify-between border-b border-[var(--color-line)] pb-4 mb-4">
+          <div className="flex items-end justify-between border-b border-[var(--color-line)] pb-4 mb-8">
             <div>
               <span className="editorial-folio text-xs font-semibold tracking-wider text-[var(--color-blue)] uppercase">
-                Procedimientos Médicos
+                Procedimientos Médicos Principales
               </span>
-              <h2 className="font-heading text-2xl sm:text-3xl text-[var(--color-ink)] mt-1">
+              <h2 className="font-heading text-2xl sm:text-3xl text-[var(--color-ink)] mt-1 font-bold">
                 Servicios y procedimientos
               </h2>
             </div>
@@ -219,34 +255,46 @@ export default function HomePage() {
               href="/servicios"
               className="group inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-blue)] transition-colors hover:text-[var(--color-navy)]"
             >
-              <span>Ver todos</span>
+              <span>Ver los 10 servicios</span>
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </Link>
           </div>
-          <div>
-            {services.map((service, i) => (
-              <IndexRow
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {services.slice(0, 4).map((service, i) => (
+              <EntityCard
                 key={service.id}
                 index={i + 1}
                 title={service.name}
                 description={service.description}
                 href={`/servicios/${service.slug}` as Route}
                 image={service.image}
+                badge={service.type === "ambulatorio" ? "Ambulatorio" : "Hospitalario"}
               />
             ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <Link
+              href="/servicios"
+              className="inline-flex items-center justify-center gap-2 rounded-xl border border-blue-200/80 bg-white px-6 py-3 text-sm font-semibold text-[var(--color-navy)] shadow-xs transition-all hover:bg-[var(--color-blue)] hover:text-white hover:border-transparent hover:shadow-md"
+            >
+              <span>Ver todos los servicios y procedimientos ({services.length})</span>
+              <ArrowUpRight className="h-4 w-4" />
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Síntomas — misma lista-índice */}
+      {/* Síntomas — cuadrícula destacada de los 4 más importantes */}
       <section id="sintomas" className="border-t border-[var(--color-line)] py-16">
         <div className="mx-auto max-w-6xl px-6">
-          <div className="flex items-end justify-between border-b border-[var(--color-line)] pb-4 mb-4">
+          <div className="flex items-end justify-between border-b border-[var(--color-line)] pb-4 mb-8">
             <div>
               <span className="editorial-folio text-xs font-semibold tracking-wider text-[var(--color-blue)] uppercase">
-                Guía de Orientación
+                Guía de Orientación al Paciente
               </span>
-              <h2 className="font-heading text-2xl sm:text-3xl text-[var(--color-ink)] mt-1">
+              <h2 className="font-heading text-2xl sm:text-3xl text-[var(--color-ink)] mt-1 font-bold">
                 Síntomas frecuentes
               </h2>
             </div>
@@ -254,21 +302,33 @@ export default function HomePage() {
               href="/sintomas"
               className="group inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-blue)] transition-colors hover:text-[var(--color-navy)]"
             >
-              <span>Ver todos</span>
+              <span>Ver los 10 síntomas</span>
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </Link>
           </div>
-          <div>
-            {symptoms.map((symptom, i) => (
-              <IndexRow
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {symptoms.slice(0, 4).map((symptom, i) => (
+              <EntityCard
                 key={symptom.id}
                 index={i + 1}
                 title={symptom.name}
                 description={symptom.description}
                 href={`/sintomas/${symptom.slug}` as Route}
                 image={symptom.image}
+                badge="Orientación Médica"
               />
             ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <Link
+              href="/sintomas"
+              className="inline-flex items-center justify-center gap-2 rounded-xl border border-blue-200/80 bg-blue-50/50 px-6 py-3 text-sm font-semibold text-[var(--color-navy)] transition-all hover:bg-[var(--color-blue)] hover:text-white hover:border-transparent hover:shadow-md"
+            >
+              <span>Ver la guía completa de síntomas ({symptoms.length})</span>
+              <ArrowUpRight className="h-4 w-4" />
+            </Link>
           </div>
         </div>
       </section>
