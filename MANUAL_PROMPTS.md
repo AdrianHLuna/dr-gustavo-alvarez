@@ -24,6 +24,8 @@ Instrucciones generales de color y estilo:
 - Composition: Focused clinical macro or symmetrical editorial view.
 - Suffixes: realistic medical CGI, 8k, photorealistic textures, unreal engine 5 style --ar 16:9 --v 6.0
 - Negative Prompt: hologram, sci-fi, futuristic, spaceship, cyberpunk, neon, glowing digital UI, hud, data rings, blueprints, user interface, text, words, letters, watermark, signature, blood, explicit nudity, graphic content.
+
+Estas son instrucciones, no hagas imágenes todavía.
 ```
 
 ---
