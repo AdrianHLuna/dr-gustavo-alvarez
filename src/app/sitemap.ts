@@ -7,7 +7,7 @@ const FALLBACK_DATE = new Date("2026-09-09");
 const dateOf = (lastReviewed?: string) => (lastReviewed ? new Date(lastReviewed) : FALLBACK_DATE);
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.urologotuxtla.com";
 
   const diseaseUrls = diseases.map((d) => ({
     url: `${baseUrl}/enfermedades/${d.slug}`,

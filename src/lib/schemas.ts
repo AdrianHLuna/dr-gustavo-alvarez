@@ -1,7 +1,7 @@
 import { doctor, diseases, services, symptoms } from "@/data";
 import type { MedicalCondition, MedicalService, Symptom } from "@/types/schema";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.urologotuxtla.com";
 
 // ─── IDs estables del grafo ── v3 ─────────────────────────────
 export const IDS = {

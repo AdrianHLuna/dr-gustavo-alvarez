@@ -21,7 +21,7 @@ export const doctor: DoctorProfile = {
   emergencyPhone: "+529616139717",
   // PENDIENTE: el doctor no proporcionó correo de contacto. Placeholder
   // funcional del dominio del sitio hasta que se confirme el real.
-  email: "contacto@dr-gustavo-alvarez.com",
+  email: "contacto@urologotuxtla.com",
   address: "Av. Faustino Miranda esq. Calle Álamos, Fracc. Parque Madero",
   city: "Tuxtla Gutiérrez",
   state: "Chiapas",
