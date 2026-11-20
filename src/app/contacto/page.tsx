@@ -37,10 +37,15 @@ export default function ContactPage() {
       <section className="mb-10">
         <MapFacade address={fullAddress} googleMapsUrl={doctor.googleMapsUrl} whatsapp={doctor.whatsapp} />
         <div className="mt-3 flex flex-wrap items-center justify-between gap-3 text-xs text-[var(--color-slate)] px-1">
-          <span className="flex items-center gap-1.5 font-medium text-[var(--color-ink)]">
+          <a
+            href={doctor.googleMapsUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-1.5 font-medium text-[var(--color-ink)] transition-colors hover:text-[var(--color-blue)]"
+          >
             <MapPin className="h-4 w-4 text-[var(--color-blue)] shrink-0" aria-hidden="true" />
             <span>{fullAddress}</span>
-          </span>
+          </a>
           <span>Estacionamiento cercano y acceso adaptado para pacientes.</span>
         </div>
       </section>

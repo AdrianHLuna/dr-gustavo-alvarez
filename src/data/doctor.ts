@@ -26,11 +26,11 @@ export const doctor: DoctorProfile = {
   city: "Tuxtla Gutiérrez",
   state: "Chiapas",
   country: "México",
-  // PENDIENTE: no se dio la URL canónica de la ficha de Google Business
-  // Profile ("Urólogo Doctor Gustavo Alvarez Velasco | Urólogo en Tuxtla
-  // Gutiérrez"). Se usa una búsqueda funcional por dirección mientras tanto.
-  googleMapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=Policl%C3%ADnica+de+Especialidades+en+Chiapas+Av.+Faustino+Miranda+esq.+Calle+%C3%81lamos+Fracc.+Parque+Madero+Tuxtla+Guti%C3%A9rrez+Chiapas",
+  googleMapsUrl: "https://maps.app.goo.gl/gaGxVD8qrQX9Cdiz9",
+  geo: {
+    latitude: 16.757877,
+    longitude: -93.131341,
+  },
   // Precio de "primera vez" confirmado por el doctor. La consulta subsecuente
   // no fue proporcionada — PENDIENTE, se muestra así en la página de precio.
   consultationPrice: 1000,
@@ -77,5 +77,8 @@ export const doctor: DoctorProfile = {
   // Sin testimonios reales verificables todavía — no se fabrican.
   // PENDIENTE: solo se dio el nombre de la página de Facebook, no su URL,
   // así que no entra a sameAs hasta que el doctor confirme el enlace real.
-  sameAs: ["https://www.instagram.com/cirujanourologotgz/"],
+  sameAs: [
+    "https://www.instagram.com/cirujanourologotgz/",
+    "https://maps.app.goo.gl/gaGxVD8qrQX9Cdiz9",
+  ],
 };

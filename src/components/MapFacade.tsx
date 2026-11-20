@@ -15,11 +15,11 @@ interface MapFacadeProps {
  */
 export default function MapFacade({ address, googleMapsUrl }: MapFacadeProps) {
   const [iframeError, setIframeError] = useState(false);
-  const query = "Policlínica de Especialidades en Chiapas, Tuxtla Gutiérrez, Chiapas";
-  const mapsEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(query)}&output=embed`;
+  const query = "Urólogo Doctor Gustavo Alvarez Velasco | Urólogo en Tuxtla Gutiérrez";
+  const mapsEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(query)}&ll=16.757877,-93.131341&z=17&output=embed`;
   const externalUrl =
     googleMapsUrl ??
-    `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+    "https://maps.app.goo.gl/gaGxVD8qrQX9Cdiz9";
 
   return (
     <div className="relative h-80 sm:h-96 w-full overflow-hidden rounded-3xl border border-slate-200/90 bg-slate-100 shadow-md transition-all">
