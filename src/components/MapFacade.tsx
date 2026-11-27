@@ -42,7 +42,7 @@ export default function MapFacade({ address, googleMapsUrl }: MapFacadeProps) {
           </div>
           <div>
             <h3 className="font-heading text-lg font-bold text-[var(--color-navy)]">
-              Policlínica de Especialidades en Chiapas
+              Médica Diamante · Consultorio 104
             </h3>
             <p className="mt-1 text-xs text-[var(--color-slate)] max-w-sm">
               {address}

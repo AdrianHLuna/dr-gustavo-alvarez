@@ -22,7 +22,7 @@ export const doctor: DoctorProfile = {
   // PENDIENTE: el doctor no proporcionó correo de contacto. Placeholder
   // funcional del dominio del sitio hasta que se confirme el real.
   email: "contacto@urologotuxtla.com",
-  address: "Av. Faustino Miranda esq. Calle Álamos, Fracc. Parque Madero",
+  address: "Calle 16A. Pte. Nte. 232-Consultorio 104, Médica Diamante, Arboledas, 29030",
   city: "Tuxtla Gutiérrez",
   state: "Chiapas",
   country: "México",
